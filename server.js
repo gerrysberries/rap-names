@@ -34,6 +34,10 @@ app.get('/api/:rapperName', (req, res) => {
 	}
 });
 
+app.get('/api/test/test', (req, res) => {
+	res.json({message: 'Test endpoint works!'});
+});
+
 app.listen(process.env.PORT || PORT, () => {
 	console.log(`Server is running on port ${PORT}!`);
 });
